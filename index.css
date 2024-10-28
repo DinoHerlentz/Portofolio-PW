@@ -135,3 +135,13 @@ html {
 .timeline-date {
     margin-bottom: 10px;
 }
+
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: white; /* Set the default color */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffcc00 !important; /* Change the color on hover (yellow) */
+    text-decoration: underline; /* Optional: Add an underline effect */
+}
