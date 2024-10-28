@@ -1,9 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    /* Mengubah latar belakang menjadi hitam */
+    font-family: sans-serif;
+    background-color: #222;
     color: #fff;
-    /* Mengubah warna teks menjadi putih */
+    padding: 20px;
 }
 
 h2 {
@@ -12,6 +11,10 @@ h2 {
     /* Warna kuning cerah untuk judul */
     text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.7);
     /* Menambahkan bayangan pada teks */
+}
+
+.list-group-item {
+    color: blue !important;
 }
 
 .card {
@@ -71,4 +74,64 @@ footer {
 
 html {
     scroll-behavior: smooth; /* Mengaktifkan efek scrolling halus */
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: #eee;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 11px; /* Adjusted this value to center the dot on the line */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.timeline-item.left .timeline-content,
+.timeline-item.right .timeline-content {
+    left: 0;
+    right: 0;
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+}
+
+.timeline-date {
+    margin-bottom: 10px;
 }
