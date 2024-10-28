@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    /* Mengubah latar belakang menjadi hitam */
+    color: #fff;
+    /* Mengubah warna teks menjadi putih */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+    /* Warna kuning cerah untuk judul */
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.7);
+    /* Menambahkan bayangan pada teks */
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: #333;
+    /* Warna latar belakang kartu */
+    border: 1px solid #444;
+    /* Warna border kartu */
+}
+
+.card-title {
+    color: #ffcc00;
+    /* Warna kuning cerah untuk judul kartu */
+}
+
+.card-text {
+    color: #fff;
+    /* Warna putih untuk teks dalam kartu */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Warna tombol */
+    border-color: #007bff;
+    /* Warna border tombol */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Warna tombol saat hover */
+    border-color: #0056b3;
+    /* Warna border tombol saat hover */
+}
+
+footer {
+    background-color: #222;
+    /* Mengubah warna latar belakang footer */
+    color: #fff;
+    /* Mengubah warna teks footer menjadi putih */
+    padding: 20px 0;
+    /* Menambahkan padding pada footer */
+}
+
+#profile-pic {
+    width: 150px; /* Atur lebar gambar */
+    height: 150px; /* Atur tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    margin-top: 20px; /* Jarak atas dari teks */
+    border: 3px solid #ffcc00; /* Border kuning di sekitar gambar */
+}
+
+.card-img-top {
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar kartu */
+    height: 300px; /* Mengatur tinggi gambar agar konsisten */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+html {
+    scroll-behavior: smooth; /* Mengaktifkan efek scrolling halus */
+}
